@@ -1,0 +1,45 @@
+.quadrants-screen {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f8ff;
+  }
+  
+  .quadrants-content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .form {
+    margin-top: 20px;
+  }
+  
+  .form input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .register-button {
+    background-color: #004a9e;
+    color: white;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .corner-logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    opacity: 0.9;
+  }
+  

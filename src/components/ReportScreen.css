@@ -1,0 +1,126 @@
+.report-screen {
+  display: flex;
+  height: 100vh; /* Altura total de la pantalla */
+  background-color: #f0f8ff;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #0074cc;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sidebar .menu-item {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar .menu-item:hover {
+  background-color: #005fa3;
+}
+
+.sidebar .menu-item.active {
+  background-color: white;
+  color: #0074cc;
+}
+
+.sidebar .menu-item img {
+  margin-right: 10px;
+}
+
+.report-content {
+  flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ocultar el desbordamiento */
+}
+
+.report-table-container {
+  position: relative;
+  width: 100%; /* Ancho completo */
+  height: 90vh; /* Altura casi completa de la pantalla para dejar espacio para márgenes */
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 2px solid #0074cc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.qr-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.05;
+  text-align: center;
+  z-index: 0;
+}
+
+.qr-image {
+  width: 200px;
+  height: auto;
+}
+
+.qr-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: #0074cc;
+  font-weight: bold;
+  opacity: 0.1;
+}
+
+.report-table {
+  width: 100%;
+  height: 100%; /* Altura total del contenedor */
+  border-collapse: collapse;
+  position: relative;
+  z-index: 1;
+  font-family: Arial, sans-serif;
+}
+
+.report-table thead {
+  background-color: #4d4d4d;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.report-table th, .report-table td {
+  padding: 10px;
+  border: 1px solid #0074cc;
+  text-align: center;
+  font-size: 14px;
+}
+
+.report-table th {
+  background-color: #4d4d4d;
+}
+
+.report-table td {
+  background-color: white;
+}
+
+.corner-logo {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: auto;
+  opacity: 0.9;
+}

@@ -1,0 +1,16 @@
+/* src/App.css */
+.app {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+}

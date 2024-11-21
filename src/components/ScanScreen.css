@@ -1,0 +1,46 @@
+.scan-screen {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f8ff;
+  }
+  
+  .scan-content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .qr-image {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .qr-button {
+    background-color: #0078d7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .register-button {
+    background-color: #004a9e;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .corner-logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    opacity: 0.9;
+  }
+  

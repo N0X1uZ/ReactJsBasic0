@@ -1,0 +1,98 @@
+.home-screen {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f8ff; /* Fondo claro */
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #0074cc;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sidebar .menu-item {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar .menu-item:hover {
+  background-color: #005fa3;
+}
+
+.sidebar .menu-item.active {
+  background-color: white;
+  color: #0074cc;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.qr-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 90vh;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 2px solid #0074cc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden;
+}
+
+.qr-code {
+  width: 200px; /* Ajusto el tamaño del QR */
+  margin-bottom: 20px; /* Espacio entre el QR y el logo */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table th {
+  background-color: #333;
+  color: white;
+}
+
+.qr-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #0074cc;
+  opacity: 0.1;
+}
+
+.logo-image {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  opacity: 0.9;
+}

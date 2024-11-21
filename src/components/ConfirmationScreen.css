@@ -1,0 +1,29 @@
+.confirmation-screen {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f8ff;
+  }
+  
+  .confirmation-content {
+    text-align: center;
+    position: relative;
+  }
+  
+  .confirmation-logo {
+    width: 100px;
+    margin-top: 20px;
+    opacity: 0.8;
+  }
+  
+  .home-button {
+    background-color: #0078d7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  

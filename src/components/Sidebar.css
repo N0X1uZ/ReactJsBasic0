@@ -1,0 +1,38 @@
+/* components/Sidebar.css */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #0078d7;
+  color: white;
+  padding-top: 20px;
+  border-radius: 15px;
+  align-items: flex-start;
+  padding-left: 15px;
+}
+
+.sidebar button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.sidebar button:hover {
+  background-color: #005a9e;
+}
+
+.sidebar .active {
+  background-color: #ffffff;
+  color: #0078d7;
+}
+
+.sidebar button span {
+  margin-left: 10px;
+}
