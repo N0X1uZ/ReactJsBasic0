@@ -1,38 +1,75 @@
-/* components/Sidebar.css */
+/* Sidebar */
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  background-color: #0078d7;
+  width: 20%; /* Ajusta el ancho del sidebar */
+  background-color: #0078d7; /* Fondo azul */
+  padding: 15px;
+  border-radius: 10px;
   color: white;
-  padding-top: 20px;
-  border-radius: 15px;
-  align-items: flex-start;
-  padding-left: 15px;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.sidebar button {
+/* Botones */
+.sidebar-btn {
   display: flex;
   align-items: center;
-  background: none;
+  justify-content: flex-start;
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: transparent;
   border: none;
   color: white;
-  font-size: 1em;
-  padding: 10px 15px;
-  cursor: pointer;
   width: 100%;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea separadora */
 }
 
-.sidebar button:hover {
+.sidebar-btn:last-child {
+  border-bottom: none; /* Elimina la línea del último botón */
+}
+
+.sidebar-btn i {
+  font-size: 1.5rem; /* Tamaño del icono */
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.sidebar-btn:hover {
   background-color: #005a9e;
+  color: #e2e6ea;
 }
 
-.sidebar .active {
-  background-color: #ffffff;
+.sidebar-btn.active {
+  background-color: white;
   color: #0078d7;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.sidebar button span {
-  margin-left: 10px;
+.sidebar-btn.active i {
+  color: #0078d7; /* Icono cambia de color en el botón activo */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+    height: auto; /* Ajusta la altura según el contenido */
+    position: fixed; /* Sidebar fijo en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 0; /* Elimina los bordes redondeados */
+    display: flex;
+    flex-wrap: wrap; /* Para ajustar los botones en filas */
+    padding: 10px;
+  }
+
+  .sidebar-btn {
+    width: 100%; /* Botones ocupan todo el ancho */
+    font-size: 0.9rem; /* Ajustar el tamaño del texto */
+    margin-bottom: 5px;
+  }
 }

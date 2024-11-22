@@ -1,4 +1,3 @@
-// components/HomeScreen.js
 import React from 'react';
 import Sidebar from './Sidebar';
 import './HomeScreen.css';
@@ -9,13 +8,12 @@ function HomeScreen({ navigateTo }) {
   return (
     <div className="home-screen">
       <Sidebar navigateTo={navigateTo} active="home" />
-      <div className="content">
-        <div className="qr-container">
-          {/* QR centrado */}
-          <img src={qrCodeImage} alt="QR Code" className="qr-code" />
-          {/* Logo en la esquina inferior derecha */}
-          <img src={logoImage} alt="Logo" className="logo-image" />
+      <div className="home-content">
+        <div className="home-qr-container">
+          <div className="home-qr-background"></div> {/* Fondo circular azul */}
+          <img src={qrCodeImage} alt="QR Code" className="home-qr-code" />
         </div>
+        <img src={logoImage} alt="Logo" className="home-logo-image" />
       </div>
     </div>
   );

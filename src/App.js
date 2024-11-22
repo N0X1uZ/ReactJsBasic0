@@ -5,6 +5,7 @@ import ReportScreen from './components/ReportScreen';
 import HomeScreen from './components/HomeScreen';
 import ScanScreen from './components/ScanScreen';
 import ConfirmationScreen from './components/ConfirmationScreen';
+import RegistrarRecorrido from './components/RegistrarRecorrido'; // Importa el nuevo componente
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -29,6 +30,8 @@ function App() {
         <ScanScreen navigateTo={navigateTo} />
       ) : currentPage === 'confirmation' ? (
         <ConfirmationScreen navigateTo={navigateTo} />
+      ) : currentPage === 'register' ? ( // Nueva condición para Registrar Recorrido
+        <RegistrarRecorrido navigateTo={navigateTo} />
       ) : null}
     </div>
   );
